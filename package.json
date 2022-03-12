@@ -17,6 +17,8 @@
 		"posthtml-include": "./lib/posthtml-include"
 	},
 	"scripts": {
-		"dev": "parcel src/index.html"
+		"dev": "parcel src/index.html",
+		"build": "parcel build --no-source-maps src/index.html",
+		"deploy": "parcel build --no-source-maps src/index.html && cd ./dist && git init && git add --all && git commit -m 'init' && git remote add github git@github.com:Nigless/nigless.github.io.git && git push --force github && rm -rf ./.git && cd -"
 	}
 }
