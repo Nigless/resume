@@ -13,8 +13,7 @@
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-plugin-editorconfig": "^3.2.0",
 		"eslint-plugin-import": "^2.25.4",
-		"parcel": "^2.1.1",
-		"posthtml-include": "./lib/posthtml-include"
+		"parcel": "^2.1.1"
 	},
 	"scripts": {
 		"dev": "parcel src/index.html",
