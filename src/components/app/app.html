@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="./styles.scss">
+<component name="Aside" src="../aside/aside.html"></component>
+<component name="Timeline" src="../timeline/timeline.html"></component>
+
+<div class="app">
+	<Aside class="app__aside"></Aside>
+	<div class="app__content">
+		<div class="app__child">
+			<h2 class="h4">ОБО МНЕ</h2>
+			<p>
+				С этими технологиями я работаю, или же когда-либо с ними сталкивался и понимаю принцип их работы:
+
+				<ul>
+					<li>Языки: HTML, CSS, JavaScript
+					</li>
+					<li>Препроцессоры: PostCSS, SASS, TypeScript
+					</li>
+					<li>Сборщики: Webpack, Gulp, Parcel
+					</li>
+					<li>Контроль версий: Git, Github
+					</li>
+					<li>Пакетные менеджеры: Yarn, npm
+					</li>
+					<li>Фреймворки: React, Styled Components
+					</li>
+					<li>Операционные системы: Windows, Linux
+					</li>
+				</ul>
+
+				Интересуюсь интернет технологиями и автоматизацией процесса разработки. Люблю линукс.<br>
+				<br>
+				Ответственный, пунктуальный, увереный в себе.
+			</p>
+		</div>
+		<div class="app__child">
+			<h2 class="h4">ОПЫТ РАБОТЫ</h2>
+			<Timeline items="[
+				{title: 'Начало', date: '2016', description:
+					['Делать было нечего, сидел теребил html теги на ', {tag: 'a', attrs: { href: 'https://codepen.io' }, content: 'codepen.io'}, '.']},
+				{title: 'Практика/Фриланс', date: '2021', description:
+					['Пет проэкты. Cайт для приема донатов для minecraft сервера (ссылки нет). Микро проэкт на React ', {tag: 'a', attrs: { href: 'https://github.com/Nigless/eval' }, content: 'eval'}, ', выполняет js код из иддресной строки.', {tag: 'br'}, 'Изучал сборщики и препроцессоры, пытался верстать шаблоны на реакте, но мотивации не хватало.', {tag: 'br'}, '1 проэкт на фрилансе: ', {tag: 'a', attrs: { href: 'https://github.com/Nigless/template' }, content: 'github.com/Nigless/template'},]},
+				{title: 'Junior Frontend разработчик в компании e-krit', date: '2022', description:
+					['2 проэкта: ', {tag: 'br'}, {tag: 'a', attrs: { href: 'https://scratch.radio' }, content: 'scratch.radio'}, ', на React, и магазин елок (ссылку не нашел), на php.']},
+				{title: 'Практика', date: 'Сегодня', description:
+					['2 проэкта: ', {tag: 'br'}, 'Чат бот, сначала ', {tag: 'a', attrs: { href: 'https://github.com/Nigless/multibot.js' }, content: 'на js'}, ', потом переписаный ', {tag: 'a', attrs: { href: 'https://github.com/Nigless/turbot' }, content: 'на Rust'},'.', {tag: 'br'}, 'Это резюме.']}
+				]">
+			</Timeline>
+		</div>
+	</div>
+</div>

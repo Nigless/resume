@@ -1,0 +1,13 @@
+@import '../../styles/vars';
+
+.contact {
+	padding: 5px 0;
+	display: inline-block;
+
+	&__icon {
+		float: left;
+		width: 1em;
+		margin-right: 0.5em;
+		fill: $main;
+	}
+}

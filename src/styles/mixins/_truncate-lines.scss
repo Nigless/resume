@@ -1,0 +1,16 @@
+// @include truncate-lines(2);
+
+/* stylelint-disable */
+@mixin truncate-lines($n) {
+  box-orient: vertical;
+  box-orient: vertical;
+  box-orient: vertical;
+  display: box;
+  display: box;
+  display: box;
+  -webkit-line-clamp: $n;
+  -moz-line-clamp: $n;
+  line-clamp: $n;
+  overflow: hidden;
+}
+/* stylelint-enable */

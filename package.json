@@ -1,0 +1,22 @@
+{
+	"private": true,
+	"source": "src/index.html",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.1.1",
+		"@parcel/transformer-webmanifest": "^2.1.1",
+		"@posthtml/esm": "^1.0.0",
+		"eslint": "^8.6.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-editorconfig": "^3.2.0",
+		"eslint-plugin-import": "^2.25.4",
+		"parcel": "^2.1.1",
+		"posthtml-include": "./lib/posthtml-include"
+	},
+	"scripts": {
+		"dev": "parcel src/index.html"
+	}
+}

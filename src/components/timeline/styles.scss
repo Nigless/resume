@@ -1,0 +1,67 @@
+@import '../../styles/vars';
+
+.timeline {
+	margin: 0.9em 0;
+
+	&__item {
+		padding: 14px 0;
+		padding-left: 25px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 11px;
+			width: 3px;
+			background: $main;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: 6px;
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			background: $main;
+		}
+
+		&--first {
+			padding-top: 0;
+
+			&::before {
+				top: 9px
+			}
+
+			&::after {
+				top: 3px
+			}
+		}
+
+		&--last {
+			padding-bottom: 0;
+
+			&::before {
+				background: linear-gradient($main 19px, transparent);
+			}
+		}
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__date {
+		margin: 0;
+		margin-top: 3px;
+		color: $main-1;
+	}
+
+	&__description {
+		margin: 0;
+		margin-top: 14px;
+	}
+}

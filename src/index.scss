@@ -1,0 +1,59 @@
+@import './styles/vars';
+@import './styles/mixins';
+
+body {
+	font-family: $base-font-family;
+	font-size: $font-size;
+	color: $main;
+	background: $background-0;
+	box-sizing: border-box;
+	line-height: 1.2;
+	min-width: 250px;
+
+	@include breakpoint(sm) {
+		font-size: 12px;
+	}
+
+}
+
+p {
+	margin: 0.9em 0;
+}
+
+li {
+	margin: 0.4em 0;
+}
+
+ul {
+	margin: 1.5em 0;
+	padding-left: 1.5em;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-size: 0.7 + (7 - $i) * 0.3em;
+		margin: 0.5em 0;
+		font-weight: 600;
+	}
+
+	.h#{$i} {
+		font-size: 0.7 + (7 - $i) * 0.3em;
+		margin: 0.72em 0;
+		font-weight: 600;
+	}
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	margin: 0;
+	background: $main-a1;
+}
+
+a {
+	color: $main;
+
+	&:visited {
+		color: $brand--1;
+	}
+}

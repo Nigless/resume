@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="./styles.scss">
+<div class="skill">
+	<% "";
+	props.progress = Number.parseInt(props.progress) || 0;
+	props.title = props.title || "Title";
+	%>
+	<div class="skill__title"><%props.title%></div>
+	<div class="skill__progress">
+		<div class="skill__item<%props.progress-- > 0 ? ' skill__item--active' : ''%>"></div>
+		<div class="skill__item<%props.progress-- > 0 ? ' skill__item--active' : ''%>"></div>
+		<div class="skill__item<%props.progress-- > 0 ? ' skill__item--active' : ''%>"></div>
+		<div class="skill__item<%props.progress-- > 0 ? ' skill__item--active' : ''%>"></div>
+		<div class="skill__item<%props.progress-- > 0 ? ' skill__item--active' : ''%>"></div>
+	</div>
+</div>

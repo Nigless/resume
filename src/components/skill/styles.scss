@@ -1,0 +1,24 @@
+@import '../../styles/vars';
+
+.skill {
+	margin: 0.9em 0;
+
+	&__progress {
+		margin-top: 3px;
+		display: flex;
+
+		&>*+* {
+			margin-left: 5px;
+		}
+	}
+
+	&__item {
+		height: 5px;
+		width: 100%;
+		background: $main-2;
+
+		&--active {
+			background: $main;
+		}
+	}
+}

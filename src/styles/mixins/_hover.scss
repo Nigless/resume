@@ -1,0 +1,7 @@
+@mixin hover {
+	&:hover {
+		@include can-hover {
+			@content
+		}
+	}
+}
