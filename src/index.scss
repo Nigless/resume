@@ -14,6 +14,11 @@ body {
 		font-size: 12px;
 	}
 
+	@media print {
+		color: $print-main;
+		-webkit-print-color-adjust: exact !important;
+		background: none;
+	}
 }
 
 p {
@@ -53,7 +58,15 @@ hr {
 a {
 	color: $main;
 
+	@media print {
+		color: inherit;
+	}
+
 	&:visited {
 		color: $brand--1;
+
+		@media print {
+			color: inherit;
+		}
 	}
 }

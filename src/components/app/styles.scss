@@ -12,16 +12,38 @@
 		padding: 0;
 	}
 
+	@media print {
+		flex-direction: column;
+		padding: 0;
+	}
+
 	&__aside {
 		flex: none;
 		position: sticky !important;
 		top: 1.5em;
 		height: calc(100vh - 6em);
+		width: 300px;
+
+		@include breakpoint(laptop) {
+			width: 250px;
+		}
+
+		@include breakpoint(sm) {
+			width: 160px;
+		}
 
 		@include breakpoint(ss) {
 			height: initial;
 			position: relative !important;
+			width: initial;
 			top: 0;
+		}
+
+		@media print {
+			position: relative !important;
+			height: initial;
+			top: 0;
+			width: initial;
 		}
 	}
 
@@ -29,6 +51,10 @@
 		display: flex;
 
 		@include breakpoint(lg) {
+			flex-direction: column;
+		}
+
+		@media print {
 			flex-direction: column;
 		}
 	}

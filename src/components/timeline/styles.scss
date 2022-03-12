@@ -16,6 +16,10 @@
 			left: 11px;
 			width: 3px;
 			background: $main;
+
+			@media print {
+				background-color: $print-main;
+			}
 		}
 
 		&::after {
@@ -27,6 +31,10 @@
 			height: 13px;
 			border-radius: 50%;
 			background: $main;
+
+			@media print {
+				background-color: $print-main;
+			}
 		}
 
 		&--first {
@@ -46,6 +54,10 @@
 
 			&::before {
 				background: linear-gradient($main 19px, transparent);
+
+				@media print {
+					background: linear-gradient($print-main 19px, transparent);
+				}
 			}
 		}
 	}
@@ -58,6 +70,10 @@
 		margin: 0;
 		margin-top: 3px;
 		color: $main-1;
+
+		@media print {
+			color: $print-main-1;
+		}
 	}
 
 	&__description {

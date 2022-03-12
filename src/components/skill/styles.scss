@@ -17,8 +17,16 @@
 		width: 100%;
 		background: $main-2;
 
+		@media print {
+			background: $print-main-2;
+		}
+
 		&--active {
 			background: $main;
+
+			@media print {
+				background: $print-main;
+			}
 		}
 	}
 }
