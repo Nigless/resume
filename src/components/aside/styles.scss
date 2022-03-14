@@ -50,18 +50,21 @@
 
 	&__title {
 		font-size: inherit;
+		margin: 0;
+		margin-top: 1rem;
+
+		@media print {
+			margin: 0;
+		}
 	}
 
 	&__name {
-		margin-bottom: 0;
+		margin: 0;
 	}
 
 	&__job {
-		margin-top: 0.6em;
-	}
-
-	&__block {
-		margin-top: 2em;
+		margin: 0;
+		margin-top: 0.4em;
 	}
 
 	&__contacts {

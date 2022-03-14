@@ -22,7 +22,7 @@ body {
 }
 
 p {
-	margin: 0.9em 0;
+	margin: 1em 0;
 }
 
 li {
@@ -35,16 +35,13 @@ ul {
 }
 
 @for $i from 1 through 6 {
-	h#{$i} {
-		font-size: 0.7 + (7 - $i) * 0.3em;
-		margin: 0.5em 0;
-		font-weight: 600;
-	}
 
+	h#{$i},
 	.h#{$i} {
-		font-size: 0.7 + (7 - $i) * 0.3em;
-		margin: 0.72em 0;
+		font-size: 1em + (6 - $i) * 0.3;
+		margin: 1rem 0;
 		font-weight: 600;
+		margin-top: 2rem;
 	}
 }
 
