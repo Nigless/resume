@@ -8,12 +8,12 @@
 	margin: auto;
 
 	@include breakpoint(ss) {
-		flex-direction: column;
+		display: block;
 		padding: 0;
 	}
 
 	@media print {
-		flex-direction: column;
+		display: block;
 		padding: 0;
 	}
 
@@ -51,7 +51,7 @@
 		display: flex;
 
 		@include breakpoint(lg) {
-			flex-direction: column;
+			display: block;
 		}
 
 		@media print {
