@@ -69,11 +69,6 @@
 
 		@media print {
 			padding: 0;
-			page-break-before: always;
-
-			&:first-child {
-				page-break-before: initial;
-			}
 		}
 	}
 }
