@@ -69,6 +69,10 @@
 
 		@media print {
 			page-break-before: always;
+
+			&:first-child {
+				page-break-before: initial;
+			}
 		}
 	}
 }
