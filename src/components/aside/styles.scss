@@ -68,6 +68,7 @@
 		position: absolute;
 		bottom: 1.5em;
 		margin-top: 3em;
+		font-style: inherit;
 
 		@include breakpoint(ss) {
 			position: initial;
