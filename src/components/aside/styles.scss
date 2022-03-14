@@ -25,18 +25,17 @@
 		display: block;
 		margin: auto;
 		filter: grayscale(1);
-		box-shadow: 10px 5px $main-3;
+		border: solid 10px $background-0;
+		background: rgb(153, 153, 153);
 
 		@include breakpoint(laptop) {
 			width: 150px;
 			height: 150px;
-			box-shadow: 8px 3px $main-3;
 		}
 
 		@include breakpoint(sm) {
 			width: 120px;
 			height: 120px;
-			box-shadow: 6px 1px $main-3;
 		}
 
 		@media print {
@@ -45,6 +44,7 @@
 			margin-right: 25px;
 			width: 120px;
 			height: 120px;
+			border: 0;
 		}
 	}
 
